@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cousine&family=Josefin+Slab:wght@400;500;600&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3eae3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+  background-image: url("/images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  width: 450px;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.info > p:first-child {
+  font-family: "Cousine";
+  font-size: 0.8rem;
+  letter-spacing: 0.5rem;
+  opacity: 0.5;
+}
+
+h1 {
+  font-family: "Bree Serif";
+  line-height: 2rem;
+}
+
+p:nth-child(3) {
+  font-family: "Josefin Slab";
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price > p:first-child {
+  font-size: 2.3rem;
+  font-family: "Righteous";
+  color: #397d64;
+}
+
+.price > :last-child {
+  font-family: "Josefin Slab";
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  background-color: #397d64;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Josefin Slab";
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+@media (max-width: 425px) {
+    body{
+        padding: 10px;
+    }
+  .container {
+    width: 90vw;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    background-image: url("/images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+  }
+}
